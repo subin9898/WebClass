@@ -1,0 +1,38 @@
+table {
+  border-collapse: collapse;
+  /* 셀 두께 없애기 */
+}
+
+.gradestyle {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.gradestyle caption {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.gradestyle th {
+  border: 1px solid black;
+  padding: 5px 0;
+  border-left: none;
+}
+
+.gradestyle td {
+  border: 1px solid black;
+  padding: 5px 0;
+  text-align: center;
+  border-right: none;
+
+}
+
+.gradestyle tr:last-of-type>th {
+  background: black;
+  color: white;
+}
+
+.gradestyle tr:last-of-type>td {
+  background: black;
+  color: white;
+}

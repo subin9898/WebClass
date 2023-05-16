@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+address,
+em,
+i {
+  font-style: normal;
+}
+
+strong,
+b {
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  font-size: 12px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
+
+.all {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.top {
+  background: url('../img/bg_body.jpg') no-repeat;
+  background-size: 100% auto;
+}
+
+.top .container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+
+
+.bottom {
+  background: #2a367e;
+
+}
+
+.bottom footer {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo a img {
+  padding: 20px;
+}
+
+div>.topmenu {
+  display: flex;
+  justify-content: flex-end;
+  color: #666;
+  margin-top: 20px;
+}
+
+
+div>.topmenu>li {
+  padding: 0 20px;
+  border-right: 1px solid gray;
+}
+
+div>.topmenu>li:last-of-type {
+  border-right: none;
+}
+
+div>.menu2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+div>.menu2>li {
+  padding: 10px 30px;
+
+}
+
+main>h1 {
+  font-size: 5rem;
+  color: darkblue;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 50px 0;
+}
+
+.m_dl {
+  display: flex;
+  width: 500px;
+  height: 300px;
+  position: relative;
+
+}
+
+
+.m_dl>dt {
+
+  display: flex;
+  margin-right: 20px;
+}
+
+.m_dl>.news ul{
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  position: absolute;
+  left: 0;
+  top: 20px;
+
+}
+
+
+
+
+
+.m_dl>.news>ul>li>a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news span {
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+.m_dl>.new {
+  display: none;
+
+
+}
+
+
+
+
+
+
+
+.m_dl>.notice {
+  display: none;
+
+}
+
+.inner_footer {
+  width: 1000px;
+  margin: 0 auto;
+  color: white;
+  padding-top: 20px;
+  position: relative;
+
+}
+
+.inner_footer .f_top {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+}
+
+.inner_footer h4,
+.inner_footer dt {
+  margin-bottom: 20px;
+}
+
+.f_top2 {
+  position: relative;
+  top: 0;
+  left: 150px;
+  width: 200px;
+
+}
+
+.f_top2 dt {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.f_top2 .dt2 {
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+
+.img {
+  display: none;
+}
+
+.f_top3 {
+  position: absolute;
+  top: 20px;
+  left: 500px;
+
+}
+
+section {
+  border-bottom: 1px solid white;
+  padding-bottom: 50px;
+}
+
+
+.ft2 {
+  border-bottom: none;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}

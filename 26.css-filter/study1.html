@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>filter</title>
+  <style>
+    ul {
+      list-style: none;
+    }
+
+    div {
+      display: flex;
+    }
+
+    img {
+      transition: all 0.5s ease 0s;
+      /* filter: brightness(0); */
+    }
+
+    img:hover {
+      /* filter: grayscale(1); */
+      /* filter: brightness(0.5); */
+      filter: hue-rotate(360deg);
+    }
+
+    .tg {
+      width: 500px;
+      height: 500px;
+    }
+
+    .tg>img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <img src="./img/tiger1.jpg" alt="호랑이1">
+
+
+    <ul>
+      <li class="tg"><img src="./img/tiger3.jpg" alt="f"></li>
+    </ul>
+  </div>
+</body>
+
+</html>

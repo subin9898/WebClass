@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+address,
+em,
+i {
+  font-style: normal;
+}
+
+strong,
+b {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  width: 820px;
+  margin: 0 auto;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+}
+
+/* header */
+
+.header>img {
+  margin: 20px 0;
+}
+
+.header>p {
+  padding-bottom: 5px;
+  border-bottom: 3px solid rgb(10, 66, 139);
+}
+
+.header>p i {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.main::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+.main {
+  margin-bottom: 50px;
+}
+
+
+.main h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.main>form {
+  background: #eee;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+/* .main>.checkbox * {
+  vertical-align: middle;
+} */
+
+/* 16진수 색상 표현법에서 똑같은 문자가 6개가 반복된다면 3자지로 줄여서 표현할 수 있다. */
+
+.asia {
+  width: calc((100% - 40px)/3);
+  float: left;
+  margin-right: 20px;
+}
+
+.asia h2 {
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+
+.asia .au {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.asia .au img {
+  float: left;
+  margin-right: 10px;
+}
+
+.asia .au p {
+  float: left;
+  margin-right: 50px;
+
+}
+
+.asia .au a {
+  float: left;
+  margin-right: 30px;
+}
+
+.asia .ch {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.asia .ch img {
+  float: left;
+  margin-right: 10px;
+}
+
+.asia .ch p {
+  float: left;
+  margin-right: 100px;
+
+}
+
+.asia .ch a {
+  float: left;
+  margin-right: 30px;
+}
+
+.asia .hk {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.asia .hk img {
+  float: left;
+  margin-right: 10px;
+}
+
+.asia .hk p {
+  float: left;
+  margin-right: 100px;
+
+}
+
+.asia .hk a {
+  float: left;
+  margin-right: 30px;
+}
+
+.asia .jp {
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+
+.asia .jp img {
+  float: left;
+  margin-right: 10px;
+}
+
+.asia .jp p {
+  float: left;
+  margin-right: 100px;
+
+}
+
+.asia .jp a {
+  float: left;
+  margin-right: 30px;
+}
+
+.asia .han {
+  margin-bottom: 20px;
+}
+
+
+.america {
+  width: calc((100% - 40px)/3);
+  float: left;
+  margin-right: 20px;
+}
+
+.america h2 {
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+
+
+.america .cana {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.america .cana img {
+  float: left;
+  margin-right: 10px;
+}
+
+.america .cana p {
+  float: left;
+  margin-right: 50px;
+
+}
+
+.america .cana a {
+  float: left;
+  margin-right: 30px;
+}
+
+
+.america .usa {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.america .usa img {
+  float: left;
+  margin-right: 10px;
+}
+
+.america .usa p {
+  float: left;
+  margin-right: 50px;
+
+}
+
+.america .usa a {
+  float: left;
+  margin-right: 30px;
+}
+
+
+.europe {
+  width: calc((100% - 40px)/3);
+  float: right;
+}
+
+.europe h2 {
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+
+
+
+
+.europe .ge {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.europe .ge img {
+  float: left;
+  margin-right: 10px;
+}
+
+.europe .ge p {
+  float: left;
+  margin-right: 50px;
+
+}
+
+.europe .ge a {
+  float: left;
+  margin-right: 30px;
+}
+
+
+
+
+.europe .sp {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.europe .sp img {
+  float: left;
+  margin-right: 10px;
+}
+
+.europe .sp p {
+  float: left;
+  margin-right: 50px;
+
+}
+
+.europe .sp a {
+  float: left;
+  margin-right: 30px;
+}
+
+
+.europe .fr {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.europe .fr img {
+  float: left;
+  margin-right: 10px;
+}
+
+.europe .fr p {
+  float: left;
+  margin-right: 50px;
+
+}
+
+.europe .fr a {
+  float: left;
+  margin-right: 30px;
+}
+
+
+
+.europe .us {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.europe .us img {
+  float: left;
+  margin-right: 10px;
+}
+
+.europe .us p {
+  float: left;
+  margin-right: 50px;
+
+}
+
+.europe .us a {
+  float: left;
+  margin-right: 30px;
+}
+
+
+h3 {
+  font-weight: bold;
+}
+
+
+.footer {
+  background: #eee;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+
+.footer::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+.ft_left {
+  float: left;
+  border: 1px solid red;
+}
+
+
+.footer dl>* {
+  float: left;
+  margin-right: 10px;
+}
+
+.footer .ft_left p {
+  margin-top: 10px;
+  color: gray;
+}
+
+/* .footer dl>dd :nth-of-type(3),
+.footer dl>dd :nth-of-type(4){
+  border-left: 1px solid #ccc;
+} */
+
+
+.footer dl>dt {
+  font-weight: bold;
+}
+
+
+
+.footer dl::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+.ft_right {
+  float: right;
+  border: 1px solid red;
+}
+
+.ft_right>* {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ft_right span {
+  color: rgb(10, 66, 139);
+}
+
+
+
+
+
+/* float를 사용하여 공중에 띄우게 되면 암묵적으로 display형태는 inline-block으로 변한다. */

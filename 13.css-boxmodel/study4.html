@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>boxmodel-축약형 표현</title>
+  <link rel="stylesheet" href="./css/study4.css">
+</head>
+
+<body>
+  <h1>축약형표현</h1>
+  <p>margin/padding 축약형 표현 규칙은 같다.</p>
+  <div class="box1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero similique sit dolorum minima inventore consequatur
+    error officia. Nesciunt earum architecto ab quo. Sed qui exercitationem quia dicta nobis, vel ab.
+  </div>
+  <div class="box2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero similique sit dolorum minima inventore consequatur
+    error officia. Nesciunt earum architecto ab quo. Sed qui exercitationem quia dicta nobis, vel ab.
+  </div>
+  <div class="box3">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero similique sit dolorum minima inventore consequatur
+    error officia. Nesciunt earum architecto ab quo. Sed qui exercitationem quia dicta nobis, vel ab.
+  </div>
+  <hr>
+  <h1>margin의 상쇄 규칙/padding(상쇄없음)</h1>
+  <p>margin은 테두리 기준 바깥쪽 여백이므로 인접한 태그를 밀어내거나 밀릴 수 있다.</p>
+  <p>바깥쪽 여백이기 때문에 인접한 태그 사이에는 상쇄 규칙이 적용된다.(인접한 두개의 태그의 margin값 중 큰 값이 적용된다.)</p>
+  <p>상하 margin만 상쇄된다.(좌우 margin은 상쇄되지 않는다.)</p>
+  <p>inline레벨태그에서는 좌우패딩은 제한적으로 적용되고, 상하값은 지정하지 않는다.</p>
+  <div class="box4">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo in eligendi accusamus aperiam ullam, id temporibus!
+    Dicta nisi quaerat eos molestias tempore eum beatae, perspiciatis at voluptatibus consequatur perferendis maiores.
+  </div>
+  <div class="box5">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda facere explicabo laudantium, aspernatur
+    necessitatibus fugiat qui, eius eaque fuga illo doloremque optio, iure id quae excepturi praesentium quas suscipit
+    repellendus.
+  </div>
+  <div class="box6">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, tenetur provident! Magnam illum ipsam eum aspernatur
+    voluptas obcaecati nemo autem corrupti excepturi cupiditate illo nobis aperiam inventore, molestiae corporis
+    quibusdam.
+  </div>
+  <div class="box7">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsum, sapiente inventore eveniet repellat natus esse
+    cum accusamus a! Aliquam quidem odio illo esse, expedita debitis voluptates tempora ab exercitationem?
+  </div>
+  <hr>
+  <h1>inline레벨 태그에서의 margin과 padding</h1>
+  <p>inline레벨태그는 박스형태가 아니며, 라인형태이다. 그래서 마진과 패딩이 독특하다.</p>
+  <span class="line1">inline Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sequi quasi perferendis
+    quisquam et quia! Omnis, nihil molestias, sit aspernatur magni ducimus fugiat at ullam, vel a quos velit
+    repellendus?</span>
+  <b>strong!!</b>
+</body>
+
+</html>

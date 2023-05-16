@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+address,
+em,
+i {
+  font-style: normal;
+}
+
+strong,
+b {
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  font-size: 12px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container {
+  background: url('../img/bg_body.jpg') no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.top {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.bottom {
+  background: #2a367e;
+  width: 100%;
+  padding-top: 20px;
+}
+
+
+
+
+.logo img {
+  padding: 20px 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav>.topmenu {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+
+}
+
+nav>.topmenu>li {
+  color: gray;
+  padding-right: 15px;
+  background: url('../img/bg_sideMenu.gif') no-repeat calc(100% - 5px) 50%;
+}
+
+nav>.topmenu>li:last-of-type {
+  background: none;
+}
+
+nav>.menu2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+nav>.menu2>li {
+  margin-left: 30px;
+}
+
+/* main */
+
+main {
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+/* 첫번째 자식 태그한테 margin-top을  만들어 여백을 주는것 보다 부모태그한테 padding-top을 지정해 주는게 좋다. 자식태그는 content-box의 안에 놓여있고 content-box안에서 바깥쪽으로 부모태그의 padding과 border를 밀어내는 것이 자식태그의 margin이기 때문이다. 만약에 부모태그의 padding과 border가 없다면 자식태그가 밀어내는 여백이 부모태그 바깥으로 흘러버리게되어 부모태그의 높이가 정상적으로 유지되지 않는다.*/
+
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4rem;
+  padding: 30px 0;
+  color: #2a367e;
+}
+
+
+/* dl */
+
+
+main>dl {
+  width: 400px;
+  height: 120px;
+  position: relative;
+  align-items: flex-start;
+}
+
+
+main>dl>dt {
+  height: 30px;
+  float: left;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+main>dl>dt.on {
+  font-weight: bold;
+  color: #2a367e;
+  border-bottom: 1px solid #2a367e;
+}
+
+main>dl>dd {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 100%;
+  display: none;
+}
+
+main>dl>dt.on+dd {
+  display: block;
+}
+
+main dd li a {
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+main dd li:last-of-type {
+  margin-bottom: 0;
+}
+
+
+
+
+
+/* main>dl>dd>ul {
+  border: 1px solid red;
+
+}
+
+main>dl>dd>ul>li {
+  border: 1px solid red;
+}
+
+main>dl>dd>ul>li>a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new {
+  display: none;
+}
+
+.job {
+  display: none;
+} */
+
+
+
+span {
+  font-weight: bold;
+}
+
+
+footer {
+  width: 1000px;
+  margin: 0 auto;
+  color: white;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+
+
+.f_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+.f_center {
+  position: relative;
+  top: 0;
+  left: 150px;
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+.tapmenu {
+  width: 190px;
+  height: 110px;
+  position: relative;
+}
+
+.tapmenu>dt {
+  float: left;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  background: #1c2566;
+  margin-right: 4px;
+}
+
+.tapmenu>dt.on {
+  background: #4152ba;
+}
+
+
+
+.tapmenu>dd {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 100%;
+  height: 80px;
+  display: none;
+}
+
+.tapmenu>dt.on+dd {
+  display: block;
+}
+
+.tapmenu>dd>a {
+  display: block;
+  height: 100%;
+}
+
+.tapmenu>dd>a>img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+
+
+.f_right {
+  position: absolute;
+  top: 0;
+  left: 500px;
+
+}
+
+.b_container {
+  border-top: 1px solid white;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.b_container>.b_left>select {
+  background: #2a367e;
+  color: white;
+  border: 1px solid white;
+  padding: 3px 40px 3px 10px;
+  margin-right: 15px;
+}

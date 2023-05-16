@@ -1,0 +1,36 @@
+table {
+  border-collapse: collapse;
+}
+
+.bmi {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.bmi caption {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.bmi th {
+  border: 1px solid black;
+  padding: 5px 0;
+  border-left: none;
+}
+
+.bmi td {
+  border: 1px solid black;
+  padding: 5px 0;
+  text-align: center;
+  border-right: none;
+}
+
+.bmi tr:last-of-type>th {
+  background: black;
+  color: white;
+}
+
+.bmi tr:last-of-type>td {
+  background: black;
+  color: white;
+}

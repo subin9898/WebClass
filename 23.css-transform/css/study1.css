@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  transition: all 0.5s ease 0s;
+}
+
+.a:hover {
+  transform: translateX(100%);
+}
+
+.b:hover {
+  transform: translateY(50%);
+}
+
+.c:hover {
+  /* transform: translateX(50%)translateY(-50%); */
+  transform: translate(-50%, -50%);
+}
+
+.d:hover {
+  transform: translateZ(100px);
+}
+
+.parent {
+  border: 1px solid blue;
+  height: 60vh;
+  perspective: 300px;
+  /* 입체감 */
+  perspective-origin: 50% 50%;
+  /* perspective-origin 중심점(?)(기본값 50% 50%) */
+}
+
+.e {
+  transform-origin: 0% 0%;
+  /* 기본값 50% 50%  중심*/
+  /* 변하기 전 속성에 넣음 */
+}
+
+.e:hover {
+  transform: scaleX(2);
+  /* 기본값 1 */
+}
+
+.f {
+  transform-origin: 0% 0%;
+
+}
+
+.f:hover {
+  transform: scaleY(2);
+}
+
+.g:hover {
+  transform: scale(1.5);
+}
+
+.h {
+  transform-origin: 0% 0%;
+}
+
+.h:hover {
+  transform: rotate(30deg);
+  /* deg:각도단위 */
+}
+
+.i:hover {
+  transform: rotateX(360deg);
+}
+
+.j:hover {
+  transform: rotateY(360deg);
+}
+
+.k:hover {
+  transform: skewX(30deg);
+}
+
+.l:hover {
+  transform: skewY(30deg);
+}

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nextp {
+  background: blue;
+  color: #fff;
+}
+
+
+
+.boxA {
+  border: 10px solid black;
+  position: relative;
+  bottom: 100px;
+}
+
+.boxB {
+  border: 10px solid red;
+  position: absolute;
+  right: 100px;
+  top: 100px;
+}
+
+.parent {
+  border: 10px solid orange;
+  height: 400px;
+  width: 400px;
+  position: relative;
+  left: 100px;
+}
+
+body {
+  height: 1000vh;
+}
+
+.boxC {
+  border: 10px solid green;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
