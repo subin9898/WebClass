@@ -1,3 +1,7 @@
+
+
+
+
 window.onload = function () {
   let title = document.querySelector("#title")
   title.style.color = "blue"
