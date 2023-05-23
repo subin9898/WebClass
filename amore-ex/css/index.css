@@ -127,9 +127,10 @@ main>h1 {
 
   display: flex;
   margin-right: 20px;
+  cursor: pointer;
 }
 
-.m_dl>.news ul{
+.m_dl>.news ul {
   width: 100%;
   height: 100%;
   margin-top: 20px;
@@ -138,10 +139,6 @@ main>h1 {
   top: 20px;
 
 }
-
-
-
-
 
 .m_dl>.news>ul>li>a {
   width: 100%;
@@ -156,25 +153,68 @@ main>h1 {
 
 
 
+/*  */
+.m_dl>.new ul {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  position: absolute;
+  left: 0;
+  top: 20px;
+
+}
+
+.m_dl>.new>ul>li>a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.new span {
+  font-weight: bold;
+}
+
+/* .m_dl>.new {
+  display: none;
+} */
 
 
+/*  */
 
-.m_dl>.new {
+.m_dl>.notice ul {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  position: absolute;
+  left: 0;
+  top: 20px;
+
+}
+
+.m_dl>.notice>ul>li>a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notice span {
+  font-weight: bold;
+}
+
+.m_dl>dd {
   display: none;
 
+}
 
+
+.m_dl>dt.on+dd {
+  display: block;
 }
 
 
 
 
 
-
-
-.m_dl>.notice {
-  display: none;
-
-}
 
 .inner_footer {
   width: 1000px;
