@@ -3,7 +3,7 @@
 
 window.onload = function () {
   let tabTiltes = document.querySelectorAll(".tabTit>li")
-  let tabDes = document.querySelectorAll(".tabDes")
+  let tabDes = document.querySelector(".tabDes")
   let tabDescription = [`<h3>title1</h3>
   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt saepe expedita rerum ipsam earum doloremque
     cupiditate, et voluptatem quaerat, repellat illum maiores enim eius vitae culpa! Dolores, sint dicta?
