@@ -2,6 +2,8 @@
 
   /* 화면의 너비가 최대 767픽셀 이하인 경우 적용될 스타일 */
   .frame {
+    width: 440px;
+    margin: 0 auto;
     background: green;
   }
 }
