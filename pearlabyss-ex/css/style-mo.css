@@ -30,7 +30,21 @@
     border: 1px solid red;
     width: 6.4vw;
     height: 6.4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
   }
+
+  .btnMoMenu>span {
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: 3px 0;
+  }
+
+
 
 
   .btnMenuLang {
@@ -55,6 +69,121 @@
     width: 100%;
   }
 
+  /* mobile menu */
+  .moMenu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  .blackcover {
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease 0s;
+    pointer-events: none;
+  }
+
+  .moMenu.show .blackcover {
+    opacity: 0.8;
+    pointer-events: auto;
+  }
+
+  .moGnb {
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 75%;
+    max-width: 290px;
+    height: 100%;
+    /* overflow: auto; */
+    transform: translateX(-100%);
+    transition: all 0.5s ease 0.1s;
+
+  }
+
+  .moMenu.show .moGnb {
+    transform: translateX(0%);
+  }
+
+
+  .logoMo {
+    width: 31.47vw;
+    max-width: 230px;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 32px;
+  }
+
+  .logoMo img {
+    width: 100%;
+  }
+
+  .mobileMenuList ul {
+    /* display: none; */
+    margin-top: 14px;
+    padding-left: 10px;
+  }
+
+  .mobileMenuList ul>li {
+    color: #9a9a9a;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+
+  .mobileMenuList ul>li:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .mobileMenuList>li>a {
+    border-bottom: 1px solid #9a9a9a;
+    display: block;
+    padding: 12px 0;
+  }
+
+
+
+
+  .mobileMenuList {
+    width: 90%;
+    margin: 0 auto;
+    height: calc(100% - 130px);
+    overflow: auto;
+  }
+
+
+  .mobileMenuList>li {
+    border-bottom: 1px solid #ccc;
+    padding: 12px;
+    font-size: 1.12rem;
+    font-weight: bold;
+    position: relative;
+  }
+
+  .mobileMenuList>li::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1px solid black;
+    right: 34px;
+    top: 15px;
+    border-right: none;
+    border-top: none;
+    transform: rotate(-45deg);
+  }
+
+
+
   /* main */
 
 
@@ -76,6 +205,7 @@
 
   .videobanner {
     position: relative;
+    height: 60vh;
   }
 
   .videobanner::after {
@@ -98,15 +228,22 @@
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
+    width: 74vw;
   }
 
   .flotingtxt>h2 {
     margin-bottom: 50px;
+    width: 100%;
 
   }
 
+
+  .flotingtxt>h2 img {
+    width: 100%;
+  }
+
   .flotingtxt>a {
-    padding: 30px 110px;
+    padding: 3vw 13vw;
     background: rgb(255, 255, 255, 0.391);
     display: inline-block;
     color: #fff;
@@ -131,46 +268,49 @@
 } */
 
 
-  .news>h3 {
+  .news h3 {
     font-weight: bold;
     margin: 40px 0 20px 0;
   }
 
   .news {
-    width: 1440px;
-    height: 300px;
+    width: 90%;
+    height: 400px;
     margin: 0 auto;
+    margin-top: 60px;
   }
 
 
 
 
-  .news>ul h4 {
+  .news ul h4 {
     font-weight: bold;
     margin-bottom: 5px;
   }
 
-  .news>ul {
+  .news ul {
     display: flex;
     justify-content: space-between;
   }
 
-  .news>ul>li {
-    border-right: 1px solid #777;
-    display: flex;
-    flex: 1;
-    width: 100%;
-    padding: 0 20px;
-  }
+  .news ul>li {}
 
-  .news>ul>li:first-of-type {
+  .news ul>li:first-of-type {
     padding-left: 0;
   }
 
-  .news>ul>li:last-of-type {
+  .news ul>li:last-of-type {
     border-right: 0;
     padding-left: 20px;
   }
+
+  .news .swiper-pagination {
+    position: relative;
+    border: 1px solid red;
+    margin-top: 50px;
+  }
+
+
 
   .date {
     margin-bottom: 20px;
