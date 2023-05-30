@@ -281,8 +281,6 @@
   }
 
 
-
-
   .news ul h4 {
     font-weight: bold;
     margin-bottom: 5px;
@@ -293,7 +291,7 @@
     justify-content: space-between;
   }
 
-  .news ul>li {}
+  /* .news ul>li {} */
 
   .news ul>li:first-of-type {
     padding-left: 0;
@@ -318,28 +316,25 @@
   }
 
 
-
-
-
+  /*--------------------- images-------------------- */
   .images {
-    width: 1440px;
-    margin: 0 auto;
+    width: 100%;
     position: relative;
 
   }
 
   .images>ul {
-    display: flex;
-
+    /* display: flex; */
+    border: 1px solid red;
   }
 
   .images>ul>li {
     position: relative;
     overflow: hidden;
+    height: 220px;
+    border: 1px solid lime;
 
   }
-
-
 
   .images>ul>li>a>h4 {
     font-size: 24px;
@@ -355,13 +350,13 @@
 
   }
 
-  .images>ul>li:hover h4 {
+  /* .images>ul>li:hover h4 {
     transform: translateX(-50%)translateY(-30px);
-  }
+  } */
 
-  .images>ul>li:hover p:after {
+  /* .images>ul>li:hover p:after {
     opacity: 1;
-  }
+  } */
 
   .images>ul>li>a>p::after {
     content: '';
@@ -372,11 +367,8 @@
     width: 30px;
     height: 1px;
     background: #fff;
-    opacity: 0;
+    /* opacity: 0; */
   }
-
-
-
 
   .images>ul>li>a>p {
     font-size: 15px;
@@ -388,12 +380,12 @@
     z-index: 5;
     text-align: center;
     width: 200px;
-    opacity: 0;
+    /* opacity: 0; */
   }
 
-  .images>ul>li:hover p {
+  /* .images>ul>li:hover p {
     opacity: 1;
-  }
+  } */
 
   /* .images>ul::after {
   content: '';
@@ -407,19 +399,20 @@
   /* 나중에 배움 */
 
 
-  /* 에프터 지워도 되는데 해놔서 걍 남겨둠 */
+
 
   .images>ul>li a img {
     display: flex;
     position: relative;
     filter: grayscale(1)brightness(0.7);
-    transition: all 0.5s ease 0s;
+    /* transition: all 0.5s ease 0s; */
+    width: 100%;
   }
 
-  .images>ul>li:hover img {
+  /* .images>ul>li:hover img {
     transform: scale(1.1);
     filter: grayscale(0)brightness(1);
-  }
+  } */
 
 
 
@@ -432,11 +425,13 @@
 
 
   .notice {
+    border: 1px solid red;
     width: 1440px;
     height: 500px;
     margin: 0 auto;
     box-sizing: border-box;
     display: flex;
+    margin-top: 500px;
 
   }
 

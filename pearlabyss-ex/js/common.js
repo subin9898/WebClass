@@ -14,4 +14,23 @@ window.onload = function () {
     }
 
   })
+
+  let noticeSlider = new Swiper(".notice", {
+    slidesPerView: 2,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    breakPoints: {
+      280: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 3
+      }
+    }
+
+  })
 }
+
+//객체 -> 어떤 사물을 표현하기 위해
+
