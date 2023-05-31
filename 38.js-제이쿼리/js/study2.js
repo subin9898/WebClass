@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  //문서가 쭉 읽힌 위 실행될 소스코드
+  //문서가 쭉 읽힌 뒤 실행될 소스코드
   $("p").css("color", "green")
   $("p").css("font-weight", "bold")
   $("p").css("color", "navy").css("font-weight", "bold")
@@ -24,6 +24,6 @@ $(document).ready(function () {
   $(".list>li:nth-of-type(2)").next().css("text-align", "center")
   $(".list>li:nth-of-type(2)").prev().css("text-align", "right")
 
-  $(".listNum>li").eq(1).css("color", "red")
+  $(".listNum>li").eq(0).css("color", "red")
 
 })
