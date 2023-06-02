@@ -19,7 +19,7 @@
   <script>
     // window.alert("TEST")//최상위 객체 window는 생략해서 표현할 수 있다.
   </script>
-  <h2>태그 선택하기 - document.querySelectorAll()</h2>
+  <h2>태그 선택하기 - document.querySelector()</h2>
   <p id="a">document.querySelector("css선택자") - 이 함수(메서드)는 css선택자를 문자데이터형태로 사용하여 body태그의 위에서 아래로 내려오면서 첫번째로 일치하는 태그를
     선택한다(선택하여 객체형태로 리턴한다.)</p>
   <script>
@@ -54,7 +54,7 @@
   <p>setAttribute("속성명","속성값") - 이 함수는 선택한 태그의 속성명과 속성값을 설정할 때 사용한다. 이미 동일한 속성명으로 다른 속성값이 저장되어있는 상태에서 사용하게되면 새로운 속성값으로
     대체한다.</p>
   <p>getAttribute("속성명") - 이 함수는 선택한 태그의 속성중에 입력한 속성에 저장되어있는 속성값을 리턴하는 함수이다.</p>
-  <img src="./img/dog.jpg" alt=개" class="c">
+  <img src="./img/dog.jpg" alt="개" class="c">
   <script>
     let tag_b = document.querySelector(".b")
     tag_b.setAttribute("id", "at")
