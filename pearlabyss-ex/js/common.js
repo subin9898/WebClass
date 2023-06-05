@@ -3,6 +3,7 @@ window.onload = function () {
     slidesPerView: 2,
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
     breakPoints: {
       280: {
@@ -15,18 +16,35 @@ window.onload = function () {
 
   })
 
-  let noticeSlider = new Swiper(".notice", {
-    slidesPerView: 2,
-    pagination: {
-      el: '.swiper-pagination',
-    },
+  // let noticeSlider = new Swiper(".notice", {
+  //   slidesPerView: 2,
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //   },
+  //   breakPoints: {
+  //     280: {
+  //       slidesPerView: 1
+  //     },
+  //     768: {
+  //       slidesPerView: 3
+  //     }
+  //   }
+
+  // })
+
+  let noticeSlider2 = new Swiper(".notice_station", {
     breakPoints: {
       280: {
         slidesPerView: 1
       },
       768: {
-        slidesPerView: 3
-      }
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+    pagination: {
+      el: ".notice_pagination",
+      clickable: true,
     }
 
   })

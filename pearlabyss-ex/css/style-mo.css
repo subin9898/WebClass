@@ -284,7 +284,7 @@
   .news ul h4 {
     font-weight: bold;
     margin-bottom: 5px;
-    
+
   }
 
   .news ul {
@@ -427,8 +427,8 @@
 
   .notice {
     border: 1px solid red;
-    width: 1440px;
-    height: 500px;
+    width: 90%;
+    height: 450px;
     margin: 0 auto;
     box-sizing: border-box;
     display: flex;
@@ -462,6 +462,15 @@
     font-weight: bold;
   }
 
+
+  .notice .notice_pagination {
+    border: 1px solid blue;
+  }
+
+  span .swiper-pagination-bullet-active {
+    background: black;
+  }
+
   .notice>ul>li:last-of-type {
     margin-right: 0;
   }
@@ -471,12 +480,6 @@
     height: 100%;
     object-fit: contain;
   }
-
-
-
-
-
-
 
 
   /* footer */
