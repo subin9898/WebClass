@@ -36,6 +36,9 @@ $(document).ready(function () {
 
     // let li2depth = ($(this).children("ul").children().length)
     // $(this).css("height", (li2depth + 1) * 50 + "px")
+  });
+  $(".gnb ul").click(function () {
+    return false
   })
 
 
