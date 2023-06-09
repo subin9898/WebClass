@@ -9,6 +9,8 @@ $(document).ready(function () {
     }
   })
 
+
+
   $(".wrap>div").on("wheel DOMMouseScroll", function (event) {
     //on -> 이벤트를 여러개 묶어 사용할 수 있다.
     // console.log(event)
@@ -19,20 +21,20 @@ $(document).ready(function () {
     } else {
       delta = E.wheelDelta
     }
-    //->  브라우저 설정
+    //--->  브라우저 호환성을 맞취주는 설정
 
     if (delta < 0) {
       //마우스 휠을 내렸을 때
       if ($(this).next().length != 0) {
         let posTop = $(this).next().offset().top
-        console.log(posTop)
+        // console.log(posTop)
         $("html,body").stop().animate({ scrollTop: posTop }, 1000)
       }
     } else {
       //마우스 휠을 올렸을 때
       if ($(this).prev().length != 0) {
         let posTop = $(this).prev().offset().top
-        console.log(posTop)
+        // console.log(posTop)
         $("html,body").stop().animate({ scrollTop: posTop }, 1000)
       }
     }

@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mrtl {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.mrtl>section {
+  font-size: 1.5rem;
+  padding: 20vh 0;
+}
+
+.mrtl>section h1 {
+  margin-bottom: 30px;
+  transform: translateX(-50px);
+  opacity: 0.1;
+  transition: all 0.5s ease 0s;
+}
+
+.mrtl>section h1.on {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.mrtl>section p {
+  transform: translateX(50px);
+  opacity: 0.1;
+  transition: all 0.5s ease 0s;
+}
+
+.mrtl>section p.on {
+  transform: translateX(0);
+  opacity: 1;
+
+}
+
+.list li {
+  margin: 60px 0;
+}
