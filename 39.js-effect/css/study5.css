@@ -18,8 +18,8 @@ img {
 
 /* slide layout */
 .station {
-  width: 500px;
-  height: 300px;
+  width: 1000px;
+  height: 500px;
   overflow: hidden;
   position: relative;
 
@@ -34,7 +34,7 @@ img {
 }
 
 .train>li {
-  width: 20%;
+  width: calc(500%/1);
   height: 100%;
 }
 
