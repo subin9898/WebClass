@@ -16,26 +16,36 @@ img {
   max-width: 100%;
 }
 
-/* slide layout */
-.station {
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-  position: relative;
+/* slide layout  fade in - out*/
 
+.station {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  margin: 0 auto;
 }
 
 .train {
-  width: calc(500%/1);
+  width: 100%;
   height: 100%;
-  display: flex;
-  transition: all 1s ease 0s;
-
+  position: relative;
 }
 
 .train>li {
-  width: 20%;
+  width: 100%;
   height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  /* pointer-events의 기본값은 auto 이고 pointer-events의 값이 none으로 설정되면 사용자의 마우스 클릭이나 호버이벤트에 해당하는 태그가 반응하지 않게된다. */
+  transition: all 0.5s ease 0s;
+}
+
+.train>li.on {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .train>li img {
