@@ -1,6 +1,8 @@
 window.onload = function () {
   let newsSlider = new Swiper(".news_station", {
     slidesPerView: 2,
+    spaceBetween: 10,
+
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -33,19 +35,21 @@ window.onload = function () {
   // })
 
   let noticeSlider2 = new Swiper(".notice_station", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    pagination: {
+      el: ".notice_pagination",
+      clickable: true,
+    },
     breakPoints: {
       280: {
         slidesPerView: 1
       },
       768: {
-        slidesPerView: 4,
-        spaceBetween: 20,
+        slidesPerView: 3,
       },
     },
-    pagination: {
-      el: ".notice_pagination",
-      clickable: true,
-    }
+
 
   })
 }

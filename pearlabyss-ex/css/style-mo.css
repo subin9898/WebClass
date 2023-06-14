@@ -482,7 +482,7 @@
   }
 
 
-  /* footer */
+  /*------------------------- footer -------------------------------------*/
 
 
 
@@ -494,7 +494,7 @@
     position: relative;
     height: 300px;
     padding: 50px 10px 30px 10px;
-
+    margin-top: 20px;
   }
 
 
@@ -538,10 +538,12 @@
     position: absolute;
     top: 200px;
     left: 0;
+    border: 1px solid red;
   }
 
   .footMenu2>ul>li {
     margin-right: 100px;
+    word-break: keep-all;
   }
 
 

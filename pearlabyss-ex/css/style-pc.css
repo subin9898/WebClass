@@ -405,17 +405,18 @@
 
 
 
-  /* notice */
+  /*----------------------- notice------------------------------ */
 
 
 
   .notice {
+    border: 1px solid red;
     width: 1440px;
     height: 500px;
     margin: 0 auto;
     box-sizing: border-box;
     display: flex;
-
+    /* padding-bottom: 90px; */
   }
 
   .notice img {
@@ -461,7 +462,7 @@
 
 
 
-  /* footer */
+  /*------------------------------- footer ------------------------------*/
 
 
 
