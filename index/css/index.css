@@ -78,7 +78,6 @@ header {
   overflow: hidden;
   margin-top: 25px;
   z-index: 2;
-
 }
 
 .gnb:hover {
@@ -137,6 +136,8 @@ header {
   width: 100%;
   height: 300%;
   transition: all 0.5s ease 0s;
+  border: 1px solid red;
+
 
 }
 

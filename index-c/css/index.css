@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+b,
+strong {
+  font-weight: normal;
+}
+
+address,
+em,
+i {
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* ---------------------------------- */
+
+.all {
+  border: 1px solid red;
+  width: 1000px;
+  display: flex;
+}
+
+.a {
+  width: 200px;
+}
+
+.a>h1 {
+  border: 1px solid lime;
+  font-size: 35px;
+  font-weight: bold;
+  color: purple;
+  text-align: center;
+  padding: 10px;
+}
+
+.a>div {
+  padding: 10px;
+
+}
+
+.gnb {
+  border: 1px solid red;
+
+}
+
+.gnb>li {
+  height: 43px;
+  overflow: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+
+.gnb>li:hover {
+  height: 215px;
+}
+
+.gnb>li>a {
+  border: 1px solid blue;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+.gnb>li>a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.gnb>li ul>li>a {
+  border: 1px solid green;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+.gnb>li ul>li>a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* ------------------------------------ */
+
+main {
+  width: 800px;
+}
+
+.station {
+  width: 800px;
+  height: 350px;
+}
+
+.train {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.train>li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.train>li.on {
+  opacity: 1;
+}
+
+.train>li img {
+  width: 800px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.c {
+  border: 1px solid red;
+  display: flex;
+  height: 200px;
+}
+
+.tabMenu {
+  border: 1px solid blue;
+  width: 270px;
+  height: 100%;
+  font-size: 13px;
+}
+
+.tabMenu dt {
+  border: 1px solid lime;
+  padding: 10px 0;
+}
+
+.tabMenu ul>li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.tabMenu dd:first-of-type {
+  margin-top: 10px;
+}
+
+.tabMenu dd:last-of-type {
+  margin-bottom: 0;
+
+}
+
+
+
+
+
+
+
+
+
+.banner {
+  border: 1px solid red;
+  width: 265px;
+  height: 100%;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.direct {
+  border: 1px solid lime;
+  width: 265px;
+  height: 100%;
+}
+
+.direct img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

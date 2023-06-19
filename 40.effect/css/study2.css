@@ -86,20 +86,22 @@ strong {
   /* -----애니메이션 이름  2초동안  속도  딜레이  횟수  에니메이션 방향(0->100->0)*/
   font-size: 0;
   perspective: 300px;
+  /* font-size: 5rem; */
 }
 
-.floatingTxt h1 b {
+/* .floatingTxt h1 b {
   opacity: 0;
   font-size: 5rem;
   line-height: 5rem;
   display: inline-block;
-}
+} */
 
-.floatingTxt h1 b:nth-of-type(1) {
-  animation: introAni 1s ease 0s forwards;
-}
+/* .floatingTxt h1 b:nth-of-type(1) {
+  animation: introAni 1s ease 0s forwards; */
+/* ----------------------------forwards : 100의 스타일을 그대로 유지 */
+/* } */
 
-.floatingTxt h1 b:nth-of-type(2) {
+/* .floatingTxt h1 b:nth-of-type(2) {
   animation: introAni 1s ease 0.25s forwards;
 }
 
@@ -149,4 +151,4 @@ strong {
 
 .floatingTxt h1 b:nth-of-type(14) {
   animation: introAni 1s ease 3.25s forwards;
-}
+} */
