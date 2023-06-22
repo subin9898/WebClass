@@ -81,10 +81,10 @@ img {
 
 .gnb>li:hover {
   height: 200px;
-  
+
 }
 
-.gnb>li:last-of-type:hover{
+.gnb>li:last-of-type:hover {
   height: 160px;
 }
 
@@ -97,7 +97,7 @@ img {
 
 }
 
-.gnb>li>a:hover{
+.gnb>li>a:hover {
   background-color: gold;
   color: #000;
 }
@@ -111,25 +111,25 @@ img {
 
 }
 
-.gnb>li>ul>li>a:hover{
+.gnb>li>ul>li>a:hover {
   background-color: #000;
   color: gold;
 }
 
 
-.spotMenu{
+.spotMenu {
   /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.spotMenu>li{
+.spotMenu>li {
   border-right: 1px solid black;
   padding-right: 10px;
 }
 
-.spotMenu>li:last-of-type{
+.spotMenu>li:last-of-type {
   padding-right: 0;
   border-right: none;
   padding-left: 10px;
@@ -144,31 +144,32 @@ img {
 
 /* ------------------------------------------ */
 
-.station{
+.station {
   border: 1px solid aqua;
   width: calc(100% - 600px);
   height: calc(100% - 120px);
   overflow: hidden;
 }
 
-.train{
-  width: calc((100% - 600px)*3);
+.train {
+  width: 300%;
   height: 100%;
   display: flex;
-
 }
 
 
-.train>li{
+.train>li {
   border: 1px solid lime;
-  width: calc(100% - 600px);
   height: 100%;
+  width: calc(100% - 600px);
+  transition: all 0.5s ease 0s;
+
 }
 
 
 
 
-.train>li img{
+.train>li img {
   width: 100%;
   height: 100%;
   object-fit: cover;

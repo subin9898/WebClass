@@ -2,16 +2,29 @@ $(document).ready(function () {
 
   let result = ""
 
-  for (let i = 1; i <= 20; i++) {
+  // for (let i = 1; i <= 20; i++) {
+  //   result += `<li>
+  //     <img class="small" src = "./img/img (6)/s${i}.jpg" alt = "작은이미지${i}">
+  //       <img class="big" src="./img/img (6)/pic${i}.jpg" alt="큰이미지${i}">
+  //         <h2 class="title">art work ${i}</h2>
+  //         <p>Artwork description comes here. <br>2023.06.20</p>
+  //         <span class="btnClose">Close</span>
+  //       </li>`
+  //백틱기호로 사용 ``
+  // }
+
+  for (let i = 0; i < 20; i++) {
     result += `<li>
-      <img class="small" src = "./img/img (6)/s${i}.jpg" alt = "작은이미지${i}">
-        <img class="big" src="./img/img (6)/pic${i}.jpg" alt="큰이미지${i}">
-          <h2 class="title">art work ${i}</h2>
-          <p>Artwork description comes here. <br>2023.06.20</p>
+      <img class="small" src = "./img/img (6)/${artwork[i].imgFileName}" alt = "${artwork[i]}.imgFileName">
+          <h2 class="title">${artwork[i].title}</h2>
+          <p>${artwork[i].description}</p>
           <span class="btnClose">Close</span>
         </li>`
-    //백틱기호로 사용 ``
   }
+
+
+
+
   $(".train").html(result)
   //앞에있던 내용을 지우고 새로운 내용으로 교체
 
@@ -75,7 +88,7 @@ $(document).ready(function () {
 
   $(".btnClose").click(function () {
     $(".train>li").removeClass("on")
-    return false
+    return false  //li를 클릭한 것이 아니라 btnClose를 선택한 것임
     //상위태그로 클릭이벤트가 전달되지 않게(이벤트 버블링) 설정
 
   })
