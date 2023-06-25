@@ -145,7 +145,7 @@ img {
 /* ------------------------------------------ */
 
 .station {
-  border: 1px solid aqua;
+  /* border: 1px solid aqua; */
   width: calc(100% - 600px);
   height: calc(100% - 120px);
   overflow: hidden;
@@ -155,14 +155,15 @@ img {
   width: 300%;
   height: 100%;
   display: flex;
+  transition: all 0.5s ease 0s;
+
 }
 
 
 .train>li {
-  border: 1px solid lime;
+  /* border: 1px solid lime; */
   height: 100%;
   width: calc(100% - 600px);
-  transition: all 0.5s ease 0s;
 
 }
 
