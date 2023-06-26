@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+ul svg {
+  width: 500px;
+  border: 1px solid red;
+  transform: rotate(-90deg);
+
+}
+
+.a {
+  fill: lightblue;
+  /* 면 색 채우기 */
+  fill-opacity: 0.7;
+  stroke: red;
+  /* border없음 */
+  stroke-width: 0;
+  /* 선 두께 */
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+  /* 점선 만들기, 숫자는 선의 길이*/
+  transition: all 1s ease 0s;
+}
+
+.a:hover {
+  fill: lightgreen;
+  fill-opacity: 1;
+  stroke: lightpink;
+  stroke-width: 2;
+  stroke-dashoffset: calc((1 - 0.6)*314);
+  /* 60퍼센트 */
+}
+
+.list {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.list>li {
+  flex: 1;
+}
+
+.c1 {
+  fill: #fff;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  transition: all 5s ease 0s;
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 10000;
+}
+
+.c1:hover {
+  stroke: red;
+  stroke-width: 5;
+  stroke-dashoffset: 0;
+}
