@@ -60,5 +60,5 @@ ul svg {
 .c1:hover {
   stroke: red;
   stroke-width: 5;
-  stroke-dashoffset: 0;
+  stroke-dashoffset: 0 !important;
 }
