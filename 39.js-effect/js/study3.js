@@ -19,7 +19,7 @@ $(document).ready(function () {
     e.preventDefault()//a태그가 갖고있는 기본기능을 제거
     let target_top = $(this).attr("href")
     //클릭한 a태그의 href속성에 저장된 속성값이 리턴되어 target변수에 저장된다.
-    //(문자데이더형대로 "#s1" "#s2" ...)
+    //(문자데이터형태로 "#s1" "#s2" ...)
     let s2top = $(target_top).offset().top
     $("html,body").animate({ scrollTop: s2top }, 1000)
 

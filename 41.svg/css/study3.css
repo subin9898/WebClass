@@ -52,7 +52,7 @@ ol {
   stroke: lightgreen;
   stroke-dasharray: 314;
   stroke-dashoffset: 314;
-  transition: all 1.5s ease 0s;
+  transition: all 1s ease 0s;
 }
 
 
@@ -67,4 +67,15 @@ ol {
 .btn {
   border: 1px solid red;
   padding: 20px;
+}
+
+
+.wrap {
+  height: 2000px;
+  background-color: blue;
+}
+
+.box {
+  height: 1000px;
+  background-color: green;
 }
