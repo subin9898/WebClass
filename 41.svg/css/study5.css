@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.intro {
+  height: 100vh;
+  background-color: lightyellow;
+}
+
+.fixedFrame {
+  height: 8000px;
+  background-color: lightblue;
+  position: relative;
+}
+
+.contents {
+  height: 200vh;
+  background-color: lightseagreen;
+}
+
+.movingArea {
+  height: 800px;
+  background-color: lightpink;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.movingArea>figure {
+  width: 80%;
+  height: 80%;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+#progress {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#progress path {
+  fill: transparent;
+  stroke: black;
+  stroke-dasharray: 20;
+  stroke-dashoffset: 0;
+  animation: dashmove 20s ease 0s infinite alternate;
+  transition: all 0.5s ease 0s;
+}
+
+#progress path:hover {
+  stroke: lime;
+  stroke-width: 5;
+  stroke-dasharray: 10;
+
+}
+
+/* @keyframes dashmove {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: 1000;
+  }
+} */
+
+.per {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 35px;
+  opacity: 0.3;
+  font-weight: bold;
+}

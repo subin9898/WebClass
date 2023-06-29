@@ -3,6 +3,8 @@ function textAni(cssSelector, option) {
   // aniDelay 글자들이 나타나는 간격
   // aniSpeed 글자들이 나타나는 속도
   // textSize 글자들에게 적용하는 크기
+  // aniName 적용할 애니메이션 이름
+
   let lettersLength = $(cssSelector).get(0).innerText.length
   let result = ""
   for (let i = 0; i < lettersLength; i++) {
@@ -17,7 +19,7 @@ function textAni(cssSelector, option) {
   let aniTxtSize = option.textSize ? option.textSize : 20
   let aniName = option.effect ? option.effect : "introAni"
 
-  $(cssSelector).css("font-size", "0")
+  // $(cssSelector).css("font-size","0")
   $(cssSelector + " b").css("opacity", "0").css("line-height", "1").css("display", "inline-block").css("font-size", aniTxtSize + "px")
 
   for (let i = 0; i < $(cssSelector + " b").length; i++) {
