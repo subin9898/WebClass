@@ -29,10 +29,13 @@
 }
 
 .movingArea>figure {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   border: 1px solid red;
   margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 #progress {
@@ -44,18 +47,18 @@
 #progress path {
   fill: transparent;
   stroke: black;
-  stroke-dasharray: 20;
+  /* stroke-dasharray: 20;
   stroke-dashoffset: 0;
   animation: dashmove 20s ease 0s infinite alternate;
-  transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s; */
 }
 
-#progress path:hover {
+/* #progress path:hover {
   stroke: lime;
   stroke-width: 5;
   stroke-dasharray: 10;
 
-}
+} */
 
 /* @keyframes dashmove {
   0% {
@@ -74,4 +77,40 @@
   font-size: 35px;
   opacity: 0.3;
   font-weight: bold;
+}
+
+.station {
+  background-color: lightgreen;
+  width: 100%;
+  height: 100%;
+}
+
+.train {
+  list-style: none;
+  width: 800%;
+  height: 100%;
+  display: flex;
+}
+
+.train>li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid black;
+  font-size: 10rem;
+  font-weight: bold;
+  perspective: 500px;
+}
+
+.train>li b {
+  border: 1px solid lime;
+  display: inline-block;
+  transform: rotateY(0deg);
+  /* y축 기준 입체회전 */
+}
+
+.train>li.on {
+  color: lime;
 }
